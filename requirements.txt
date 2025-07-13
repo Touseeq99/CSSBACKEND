@@ -1,44 +1,31 @@
-<<<<<<< HEAD
-langchain==0.1.12
-langchain-community==0.0.27
-qdrant-client==1.7.6
-langchain-qdrant==0.1.0
-langchain-groq==0.1.1
-langchain-google-genai==0.0.8
-langchain-openai==0.0.8
-fastapi==0.110.0
-uvicorn[standard]==0.27.1
-gunicorn==21.2.0
-httptools==0.6.1
-watchfiles==0.21.0
-websockets==12.0
-unstructured==0.12.2
-pdfminer.six==20231228
-langserve==0.0.38
-langchain_cohere==0.1.2
-cohere==5.0.0
-python-dotenv==1.0.1
-python-multipart==0.0.9
-=======
+# Core dependencies
+fastapi
+uvicorn[standard]
+gunicorn
+python-dotenv
+python-multipart
+
+# LangChain
 langchain
 langchain-community
-qdrant-client
 langchain-qdrant
 langchain-groq
 langchain-google-genai
 langchain-openai
-fastapi
-uvicorn[standard]
-gunicorn
+langserve
+langchain_cohere
+
+# Vector Store
+qdrant-client
+
+# Document Processing
+unstructured
+pdfminer.six
+
+# LLM Providers
+cohere
+
+# Utilities
 httptools
 watchfiles
 websockets
-unstructured
-pdfminer.six
-langserve
-langchain_cohere
-cohere
-python-dotenv
-fastembed-gpu
-python-multipart
->>>>>>> bd5d90fba2479866c798fe7e1a3673ba19dc4e76
