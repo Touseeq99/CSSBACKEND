@@ -29,3 +29,5 @@ cohere
 httptools
 watchfiles
 websockets
+
+fastembed-gpu
