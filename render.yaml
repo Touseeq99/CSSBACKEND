@@ -1,0 +1,30 @@
+services:
+  - type: web
+    name: css-backend
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.9.0
+      - key: QDRANT_URL
+        fromService:
+          name: qdrant
+          property: connectionString
+          type: postgresql
+      - key: QDRANT_API_KEY
+        fromService:
+          name: qdrant
+          property: password
+          type: postgresql
+      - key: GROQ_API_KEY
+        sync: false
+      - key: GOOGLE_API_KEY
+        sync: false
+
+# Uncomment and configure if you're using a managed database
+# databases:
+#   - name: qdrant
+#     databaseName: qdrant
+#     user: qdrant
+#     plan: free
