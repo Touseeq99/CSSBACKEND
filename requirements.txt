@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 langchain==0.1.12
 langchain-community==0.0.27
 qdrant-client==1.7.6
@@ -18,3 +19,26 @@ langchain_cohere==0.1.2
 cohere==5.0.0
 python-dotenv==1.0.1
 python-multipart==0.0.9
+=======
+langchain
+langchain-community
+qdrant-client
+langchain-qdrant
+langchain-groq
+langchain-google-genai
+langchain-openai
+fastapi
+uvicorn[standard]
+gunicorn
+httptools
+watchfiles
+websockets
+unstructured
+pdfminer.six
+langserve
+langchain_cohere
+cohere
+python-dotenv
+fastembed-gpu
+python-multipart
+>>>>>>> bd5d90fba2479866c798fe7e1a3673ba19dc4e76
