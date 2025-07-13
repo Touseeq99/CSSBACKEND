@@ -17,4 +17,5 @@ langserve
 langchain_cohere
 cohere
 python-dotenv
+fastembed-gpu
 python-multipart
